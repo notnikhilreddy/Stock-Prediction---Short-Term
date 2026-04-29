@@ -1,0 +1,91 @@
+{
+  "experiment": "ptst_small_h5_bs64",
+  "model": "patchtst",
+  "current_epoch": 5,
+  "best_val_mae": 2.7162552214576863e-05,
+  "patience_counter": 4,
+  "train_log": [
+    {
+      "epoch": 1,
+      "train_loss": 0.0002215867256754996,
+      "val_mae": 2.7162552214576863e-05,
+      "val_mse": 3.831526651509876e-09,
+      "val_rmse": 6.189932674520682e-05,
+      "val_da": 0.1357720047235489,
+      "val_ic": 0.02330719513232757,
+      "lr": 8.400386032282497e-05,
+      "epoch_time_s": 15102.268508911133
+    },
+    {
+      "epoch": 2,
+      "train_loss": 4.107342097581302e-09,
+      "val_mae": 4.2358773498563096e-05,
+      "val_mse": 4.472736403471345e-09,
+      "val_rmse": 6.687851974641293e-05,
+      "val_da": 0.134108304977417,
+      "val_ic": 0.019049828460618225,
+      "lr": 0.0002280077204386764,
+      "epoch_time_s": 15187.321500301361
+    },
+    {
+      "epoch": 3,
+      "train_loss": 3.842768144924828e-09,
+      "val_mae": 4.3837615521624684e-05,
+      "val_mse": 4.553004195884114e-09,
+      "val_rmse": 6.74759527230562e-05,
+      "val_da": 0.134108304977417,
+      "val_ic": 0.11741968304951439,
+      "lr": 0.00029999999999938133,
+      "epoch_time_s": 15188.522644519806
+    },
+    {
+      "epoch": 4,
+      "train_loss": 3.807696698595809e-09,
+      "val_mae": 6.463107274612412e-05,
+      "val_mse": 6.5678325000817495e-09,
+      "val_rmse": 8.104216495184312e-05,
+      "val_da": 0.12887655198574066,
+      "val_ic": 0.1286993716158733,
+      "lr": 0.0002999213217208006,
+      "epoch_time_s": 15200.793783664703
+    },
+    {
+      "epoch": 5,
+      "train_loss": 3.7958247372973605e-09,
+      "val_mae": 4.053276279591955e-05,
+      "val_mse": 4.330516389927652e-09,
+      "val_rmse": 6.580665916096678e-05,
+      "val_da": 0.134108304977417,
+      "val_ic": 0.13813112334454303,
+      "lr": 0.0002996853973078416,
+      "epoch_time_s": 15169.889874696732
+    }
+  ],
+  "config": {
+    "model": "patchtst",
+    "n_features": 56,
+    "seq_len": 512,
+    "patch_len": 16,
+    "d_model": 128,
+    "n_heads": 4,
+    "n_layers": 3,
+    "d_ff": 512,
+    "dropout": 0.1,
+    "head_dropout": 0.1,
+    "target_idx": 1,
+    "batch_size": 64,
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "warmup_epochs": 3,
+    "max_epochs": 100,
+    "patience": 12,
+    "grad_clip": 1.0,
+    "stride": 64,
+    "num_workers": 4,
+    "data_dir": "/mmfs1/home/smaligir/BTC/data-processed",
+    "results_dir": "results",
+    "experiment_name": "ptst_small_h5_bs64",
+    "use_amp": true,
+    "wall_time_hours": 71.0
+  }
+}

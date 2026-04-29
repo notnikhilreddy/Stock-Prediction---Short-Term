@@ -1,0 +1,53 @@
+{
+  "experiment": "timesnet_long_h10",
+  "model": "timesnet",
+  "task_type": "regression",
+  "current_epoch": 1,
+  "best_primary": 5.985326788504608e-05,
+  "patience_counter": 0,
+  "train_log": [
+    {
+      "epoch": 1,
+      "train_loss": 5.677687824875884e-08,
+      "val_mae": 5.985326788504608e-05,
+      "val_mse": 9.203984241423768e-09,
+      "val_rmse": 9.593739751225154e-05,
+      "val_da": 0.5918716788291931,
+      "val_ic": 0.1074064021117892,
+      "val_net_ic": 0.10705614620801744,
+      "lr": 2.8002573875881407e-05,
+      "epoch_time_s": 49898.56691789627
+    }
+  ],
+  "config": {
+    "model": "timesnet",
+    "task_type": "regression",
+    "n_classes": 1,
+    "n_features": 56,
+    "seq_len": 1024,
+    "patch_len": 16,
+    "d_model": 128,
+    "n_heads": 8,
+    "n_layers": 3,
+    "d_ff": 512,
+    "dropout": 0.1,
+    "head_dropout": 0.1,
+    "top_k": 5,
+    "num_kernels": 3,
+    "target_idx": 2,
+    "batch_size": 128,
+    "lr": 0.0001,
+    "weight_decay": 0.0001,
+    "warmup_epochs": 3,
+    "max_epochs": 200,
+    "patience": 15,
+    "grad_clip": 1.0,
+    "stride": 64,
+    "num_workers": 8,
+    "data_dir": "/mmfs1/home/smaligir/BTC/data-processed",
+    "results_dir": "results",
+    "experiment_name": "timesnet_long_h10",
+    "use_amp": false,
+    "wall_time_hours": 23.5
+  }
+}

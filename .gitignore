@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Data (raw inputs and processed outputs — too large for git)
+../data-raw/
+../data-processed/
+
+# Trained model checkpoints (large binary files)
+results/**/checkpoint_*.pt
+results/_global_best/*.pt
+
+# Intermediate inference shards
+results/backtest/run_*/
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+slurm_logs/

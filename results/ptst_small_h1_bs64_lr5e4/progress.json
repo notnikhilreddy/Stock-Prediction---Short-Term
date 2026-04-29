@@ -1,0 +1,102 @@
+{
+  "experiment": "ptst_small_h1_bs64_lr5e4",
+  "model": "patchtst",
+  "current_epoch": 6,
+  "best_val_mae": 8.325832823175006e-06,
+  "patience_counter": 5,
+  "train_log": [
+    {
+      "epoch": 1,
+      "train_loss": 0.00013308273480769727,
+      "val_mae": 8.325832823175006e-06,
+      "val_mse": 6.046611544796576e-10,
+      "val_rmse": 2.4589858773072644e-05,
+      "val_da": 0.04343053698539734,
+      "val_ic": -0.008195643655173888,
+      "lr": 0.00014000643387137494,
+      "epoch_time_s": 15041.9594810009
+    },
+    {
+      "epoch": 2,
+      "train_loss": 8.145969286089453e-10,
+      "val_mae": 2.0145940652582794e-05,
+      "val_mse": 8.498940440304636e-10,
+      "val_rmse": 2.9152942287708518e-05,
+      "val_da": 0.04590623453259468,
+      "val_ic": 0.04266275419178727,
+      "lr": 0.00038001286739779405,
+      "epoch_time_s": 14225.702664852142
+    },
+    {
+      "epoch": 3,
+      "train_loss": 9.640820883616504e-10,
+      "val_mae": 1.611913467058912e-05,
+      "val_mse": 7.269428947687118e-10,
+      "val_rmse": 2.6961878546731714e-05,
+      "val_da": 0.04590623453259468,
+      "val_ic": 0.06619245529303325,
+      "lr": 0.0004999999999989689,
+      "epoch_time_s": 12406.204081058502
+    },
+    {
+      "epoch": 4,
+      "train_loss": 1.0293642208614205e-09,
+      "val_mae": 2.8223967092344537e-05,
+      "val_mse": 1.2074725663779873e-09,
+      "val_rmse": 3.474870596695634e-05,
+      "val_da": 0.04590623453259468,
+      "val_ic": 0.08076921405137981,
+      "lr": 0.0004998688695346677,
+      "epoch_time_s": 12425.840880155563
+    },
+    {
+      "epoch": 5,
+      "train_loss": 1.0237832265880221e-09,
+      "val_mae": 1.2257016351213679e-05,
+      "val_mse": 6.428855781059895e-10,
+      "val_rmse": 2.5355188386324197e-05,
+      "val_da": 0.04262910783290863,
+      "val_ic": 0.08944566493078616,
+      "lr": 0.000499475662179736,
+      "epoch_time_s": 12399.732229709625
+    },
+    {
+      "epoch": 6,
+      "train_loss": 1.0321499494359352e-09,
+      "val_mae": 3.919135269825347e-05,
+      "val_mse": 1.9240755655403063e-09,
+      "val_rmse": 4.386428576348082e-05,
+      "val_da": 0.04590623453259468,
+      "val_ic": 0.09635435329869119,
+      "lr": 0.0004988207903543907,
+      "epoch_time_s": 12404.805348157883
+    }
+  ],
+  "config": {
+    "model": "patchtst",
+    "n_features": 56,
+    "seq_len": 512,
+    "patch_len": 16,
+    "d_model": 128,
+    "n_heads": 4,
+    "n_layers": 3,
+    "d_ff": 512,
+    "dropout": 0.1,
+    "head_dropout": 0.1,
+    "target_idx": 0,
+    "batch_size": 64,
+    "lr": 0.0005,
+    "weight_decay": 0.0001,
+    "warmup_epochs": 3,
+    "max_epochs": 100,
+    "patience": 12,
+    "grad_clip": 1.0,
+    "stride": 64,
+    "num_workers": 4,
+    "data_dir": "/mmfs1/home/smaligir/BTC/data-processed",
+    "results_dir": "results",
+    "experiment_name": "ptst_small_h1_bs64_lr5e4",
+    "use_amp": true,
+    "wall_time_hours": 71.0
+  }
+}

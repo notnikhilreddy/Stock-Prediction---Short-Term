@@ -1,0 +1,27 @@
+model: patchtst
+task_type: classification
+n_classes: 3
+experiment_name: ptst_small_h10_cls
+target_idx: 2          # y_10 (1-second horizon)
+n_features: 56
+seq_len: 512
+patch_len: 16
+d_model: 128
+n_heads: 4
+n_layers: 3
+d_ff: 512
+dropout: 0.1
+head_dropout: 0.1
+batch_size: 512
+lr: 3.0e-4
+weight_decay: 1.0e-4
+warmup_epochs: 3
+max_epochs: 200
+patience: 15
+grad_clip: 1.0
+stride: 1
+num_workers: 8
+data_dir: ../data-processed
+results_dir: results
+use_amp: true
+wall_time_hours: 23.5

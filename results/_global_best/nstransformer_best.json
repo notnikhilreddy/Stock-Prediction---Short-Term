@@ -1,0 +1,6 @@
+{
+  "val_mae": 4.912766144116176e-06,
+  "experiment": "nst_small_h1_bs64",
+  "checkpoint": "results/_global_best/nstransformer_best.pt",
+  "updated_at": "2026-04-20T08:31:16.210999"
+}

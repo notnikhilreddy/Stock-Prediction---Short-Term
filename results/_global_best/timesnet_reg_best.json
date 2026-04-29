@@ -1,0 +1,8 @@
+{
+  "primary_value": 4.360547973192297e-05,
+  "metric": "val_mae",
+  "task_type": "regression",
+  "experiment": "timesnet_med_h10_lr5e4",
+  "checkpoint": "results/_global_best/timesnet_reg_best.pt",
+  "updated_at": "2026-04-28T11:48:47.945025"
+}

@@ -1,0 +1,69 @@
+{
+  "experiment": "ptst_small_h1_dp05",
+  "model": "patchtst",
+  "current_epoch": 3,
+  "best_val_mae": 1.047777732310351e-05,
+  "patience_counter": 0,
+  "train_log": [
+    {
+      "epoch": 1,
+      "train_loss": 0.00029686667941884764,
+      "val_mae": 0.0002758239861577749,
+      "val_mse": 1.1023088575257134e-07,
+      "val_rmse": 0.00033201036994734266,
+      "val_da": 0.04315545782446861,
+      "val_ic": -0.0026132131996701373,
+      "lr": 8.401544444448656e-05,
+      "epoch_time_s": 14141.341213226318
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.1204102089429777e-06,
+      "val_mae": 5.718893953599036e-05,
+      "val_mse": 5.2246358350771516e-09,
+      "val_rmse": 7.228164244866846e-05,
+      "val_da": 0.04479270055890083,
+      "val_ic": -0.0036890706435732824,
+      "lr": 0.00022803088557604438,
+      "epoch_time_s": 14112.705404758453
+    },
+    {
+      "epoch": 3,
+      "train_loss": 2.4443293794157564e-08,
+      "val_mae": 1.047777732310351e-05,
+      "val_mse": 6.341063785164636e-10,
+      "val_rmse": 2.518146895072771e-05,
+      "val_da": 0.04590623453259468,
+      "val_ic": 0.006815833411878391,
+      "lr": 0.0002999999999901002,
+      "epoch_time_s": 14107.370088338852
+    }
+  ],
+  "config": {
+    "model": "patchtst",
+    "n_features": 56,
+    "seq_len": 512,
+    "patch_len": 16,
+    "d_model": 128,
+    "n_heads": 4,
+    "n_layers": 3,
+    "d_ff": 512,
+    "dropout": 0.05,
+    "head_dropout": 0.05,
+    "target_idx": 0,
+    "batch_size": 256,
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "warmup_epochs": 3,
+    "max_epochs": 100,
+    "patience": 12,
+    "grad_clip": 1.0,
+    "stride": 64,
+    "num_workers": 4,
+    "data_dir": "/mmfs1/home/smaligir/BTC/data-processed",
+    "results_dir": "results",
+    "experiment_name": "ptst_small_h1_dp05",
+    "use_amp": true,
+    "wall_time_hours": 23.0
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "experiment": "ptst_small_h1_bs64_dp05",
+  "model": "patchtst",
+  "current_epoch": 4,
+  "best_val_mae": 5.347784281184431e-06,
+  "patience_counter": 0,
+  "train_log": [
+    {
+      "epoch": 1,
+      "train_loss": 0.00011889567344963268,
+      "val_mae": 1.584196616022382e-05,
+      "val_mse": 7.839021098909882e-10,
+      "val_rmse": 2.7998251907770744e-05,
+      "val_da": 0.04281160980463028,
+      "val_ic": -0.004519237065723354,
+      "lr": 8.400386032282497e-05,
+      "epoch_time_s": 15506.776410579681
+    },
+    {
+      "epoch": 2,
+      "train_loss": 8.517796271651327e-10,
+      "val_mae": 3.150947668473236e-05,
+      "val_mse": 1.4090840716463049e-09,
+      "val_rmse": 3.7537768602386384e-05,
+      "val_da": 0.04590623453259468,
+      "val_ic": -0.0009776390534293506,
+      "lr": 0.0002280077204386764,
+      "epoch_time_s": 12048.09321975708
+    },
+    {
+      "epoch": 3,
+      "train_loss": 8.70000178102951e-10,
+      "val_mae": 2.786594814097043e-05,
+      "val_mse": 1.1884638828618677e-09,
+      "val_rmse": 3.447410452588823e-05,
+      "val_da": 0.04590623453259468,
+      "val_ic": 0.06863672379251967,
+      "lr": 0.00029999999999938133,
+      "epoch_time_s": 12044.680769443512
+    },
+    {
+      "epoch": 4,
+      "train_loss": 7.402065096546653e-10,
+      "val_mae": 5.347784281184431e-06,
+      "val_mse": 5.830519955729585e-10,
+      "val_rmse": 2.41464696295951e-05,
+      "val_da": 0.052944522351026535,
+      "val_ic": 0.08332566604913322,
+      "lr": 0.0002999213217208006,
+      "epoch_time_s": 12101.551202058792
+    }
+  ],
+  "config": {
+    "model": "patchtst",
+    "n_features": 56,
+    "seq_len": 512,
+    "patch_len": 16,
+    "d_model": 128,
+    "n_heads": 4,
+    "n_layers": 3,
+    "d_ff": 512,
+    "dropout": 0.05,
+    "head_dropout": 0.05,
+    "target_idx": 0,
+    "batch_size": 64,
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "warmup_epochs": 3,
+    "max_epochs": 100,
+    "patience": 12,
+    "grad_clip": 1.0,
+    "stride": 64,
+    "num_workers": 4,
+    "data_dir": "/mmfs1/home/smaligir/BTC/data-processed",
+    "results_dir": "results",
+    "experiment_name": "ptst_small_h1_bs64_dp05",
+    "use_amp": true,
+    "wall_time_hours": 71.0
+  }
+}

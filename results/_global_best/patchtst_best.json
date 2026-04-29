@@ -1,0 +1,6 @@
+{
+  "val_mae": 5.347784281184431e-06,
+  "experiment": "ptst_small_h1_bs64_dp05",
+  "checkpoint": "results/_global_best/patchtst_best.pt",
+  "updated_at": "2026-04-20T10:24:08.289805"
+}
